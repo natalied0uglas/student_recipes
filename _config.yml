@@ -45,12 +45,17 @@ prose:
     # rooturl: '_recipes'
     ignore:
       - _config.yml
+      - /_posts
       - /_layouts
       - /_includes
       - /pages
       - /assets
       - /resources
-    media: "_uploads"
+      - .gitignore
+      - .ruby-version
+      - "Gemfile"
+      - "Gemfile.lock"
+    media: "/_uploads"
     metadata:
       _recipes:
         - name: "layout"
