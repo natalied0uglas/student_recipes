@@ -17,7 +17,6 @@ Open `_config.yml` in a text editor to change some settings.
 Configure as your own website in `_config.yml`:
 
 ```YAML
-  baseurl: ""
   url: "https://username.github.io"
 ```
 
@@ -25,11 +24,14 @@ Change these variables in `_config.yml`:
 
 ```yml
 title: Your recipe collection # the all important name of your recipe collection
-recipemenu: true # you can change to true and a menu of all recipes will appear
-favicon: assets/favicon.ico # you can uplaod your own icon
+recipemenu: false # change to true and a menu of all recipes will appear on each recipe page
+favicon: uploads/favicon.ico # you can upload your own icon
 recipe_bookcover: /uploads/bookcover.jpg #this is a placeholder that you can replace with your own cover image
-# change the following to your name or site name
+# change the following to your name or site name for the footer text
 footer_text:
   "Copyright 2020 My name"
 ```
 
+## Prose
+
+We are going to use prose.io to edit the recipes online. Once you have your site setup on github, go to prose.io and allow access to your repository by signing into GitHub. Then you can make edits.
