@@ -42,11 +42,14 @@ excerpt_separator: <!--more--> # Leave this because this controls the extract fr
 lang: en_gb
 
 prose:
-    rooturl: '_recipes'
+    # rooturl: '_recipes'
     ignore:
-    - _config.yml
-    - /_layouts
-    - /_includes
+      - _config.yml
+      - /_layouts
+      - /_includes
+      - /pages
+      - /assets
+      - /resources
     media: "_uploads"
     metadata:
       _recipes:
