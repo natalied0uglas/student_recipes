@@ -1,7 +1,7 @@
 prose:
     # rooturl: '_recipes'
     ignore:
-      - _config.yml
+      - _prose.yml
       - /_posts
       - /_layouts
       - /_includes

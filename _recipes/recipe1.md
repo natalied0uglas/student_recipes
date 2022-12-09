@@ -11,7 +11,7 @@ There are variations on this basic recipe, sometimes with no sauce, sometimes wi
 
 <!--more-->
 
-[![Moussaka](/_uploads/moussaka.jpg)](/_uploads/moussaka.jpg)
+![moussaka.jpg]({{site.baseurl}}/uploads/moussaka.jpg)
 
 ## Ingredients
 

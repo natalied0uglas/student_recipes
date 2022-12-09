@@ -1,22 +1,16 @@
-# collections
-collections:
-  recipes:
-    title: Recipes
-    output: true
-  uploads:
-    title: Uploads
-    output: true
 
 # SITE CONFIGURATION
 baseurl: "" #leave this alone
 url: "https://yoursite.github.io" #change this to yours
 title: Your recipe collection
 recipemenu: false # you can change to true and a menu of all recipes will appear
-favicon: assets/favicon.ico
+favicon: /uploads/favicon.ico
 recipe_bookcover: /uploads/bookcover.jpg
 # change the following to your name or site name
 footer_text:
   "Copyright 2020 My name"
+
+# DO NOT EDIT BELOW THIS LINE
 
 # Localization strings
 str_follow_on: "Follow on"
@@ -40,3 +34,9 @@ plugins: [jekyll-paginate, jekyll-seo-tag, jekyll-sitemap]
 exclude: [".jekyll-cache", "Gemfile", "README.md"]
 excerpt_separator: <!--more--> # Leave this because this controls the extract from the recipe on the listing page
 lang: en_gb
+
+# collections
+collections:
+  recipes:
+    title: Recipes
+    output: true
