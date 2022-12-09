@@ -40,31 +40,3 @@ plugins: [jekyll-paginate, jekyll-seo-tag, jekyll-sitemap]
 exclude: [".jekyll-cache", "Gemfile", "README.md"]
 excerpt_separator: <!--more--> # Leave this because this controls the extract from the recipe on the listing page
 lang: en_gb
-
-prose:
-    # rooturl: '_recipes'
-    ignore:
-      - _config.yml
-      - /_posts
-      - /_layouts
-      - /_includes
-      - /pages
-      - /assets
-      - /resources
-      - .gitignore
-      - .ruby-version
-      - "Gemfile"
-      - "Gemfile.lock"
-    media: "/_uploads"
-    metadata:
-      _recipes:
-        - name: "layout"
-          field:
-            element: "hidden"
-            value: "recipe"
-        - name: "title"
-          field:
-            element: "text"
-            label: "title"
-            help: "Put the title of your recipe here"
-

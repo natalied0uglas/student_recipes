@@ -1,0 +1,27 @@
+prose:
+    # rooturl: '_recipes'
+    ignore:
+      - _config.yml
+      - /_posts
+      - /_layouts
+      - /_includes
+      - /pages
+      - /assets
+      - /resources
+      - .gitignore
+      - .ruby-version
+      - "Gemfile"
+      - "Gemfile.lock"
+    media: "_uploads"
+    metadata:
+      _recipes:
+        - name: "layout"
+          field:
+            element: "hidden"
+            value: "recipe"
+        - name: "title"
+          field:
+            element: "text"
+            label: "title"
+            help: "Put the title of your recipe here"
+
