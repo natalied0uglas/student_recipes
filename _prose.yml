@@ -12,7 +12,7 @@ prose:
       - .ruby-version
       - "Gemfile"
       - "Gemfile.lock"
-    media: "_uploads"
+    media: "uploads"
     metadata:
       _recipes:
         - name: "layout"
