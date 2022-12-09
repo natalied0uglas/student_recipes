@@ -1,16 +1,22 @@
+# collections
+collections:
+  recipes:
+    title: Recipes
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+
 # SITE CONFIGURATION
-baseurl: ''  #leave this alone
-url: "https://yoursite.netlify.app"   #change this to yours
-repository: yourusername/yourrepository
-# twitter_username: pageboy  #change to your own twitter account
-lang: en_gb
-timezone: UTC
-
-rss: false  # Make sure you created a feed.xml with feed.xml layout
-# excerpt_separator: <!--above-here-is-displayed-on-home-page-->
-
-# Scripts / Features
-google_analytics: # Tracking ID, e.g. "UA-000000-01"
+baseurl: "" #leave this alone
+url: "https://yoursite.github.io" #change this to yours
+title: Your recipe collection
+recipemenu: false # you can change to true and a menu of all recipes will appear
+favicon: assets/favicon.ico
+recipe_bookcover: /uploads/bookcover.jpg
+# change the following to your name or site name
+footer_text:
+  "Copyright 2020 My name"
 
 # Localization strings
 str_follow_on: "Follow on"
@@ -26,42 +32,31 @@ str_next_page: "Next"
 str_previous_page: "Prev"
 str_javascript_required_disqus: "Please enable JavaScript to view comments."
 
-# Post navigation
-post_navigation: true
-
-# PAGINATION
-paginate: 8
-paginate_path: "page:num"
-
-# collections
-collections:
-  homepageitems:
-    output: true
-    layout: page
-
 # BUILD SETTINGS
-kramdown:
-  input: GFM
-  syntax_highlighter: rouge
-  parse_block_html: true
-  # Rouge Highlighter in Kramdown › http://kramdown.gettalong.org/syntax_highlighter/rouge.html
-  # span, block element options fall back to global
-  syntax_highlighter_opts:
-    # Rouge Options › https://github.com/jneen/rouge#full-options
-    css_class: 'codehilite'
-    # span:
-    #   line_numbers: false
-    block:
-      line_numbers: true
-      start_line: 1
+markdown: kramdown
 permalink: pretty
+highlighter: rouge
 plugins: [jekyll-paginate, jekyll-seo-tag, jekyll-sitemap]
 exclude: [".jekyll-cache", "Gemfile", "README.md"]
-github: [metadata]
-# if you want the blog to be below the home page through a link  - comment out the following line and then remove the hashes from the next 2 lines. In other words you want to include the blog/index and exclude the index on the home page.
-exclude: ["blog/index.html"]
-# paginate_path: "blog/page:num"
-# exclude: ["index.html"]
+excerpt_separator: <!--more--> # Leave this because this controls the extract from the recipe on the listing page
+lang: en_gb
 
-# Note you will then want to add the blog to the menubar through the CMS
-# You should also UNCOMMENT the homepageitems section in the config.yml file inside the the admin folder
+prose:
+    rooturl: '_recipes'
+    ignore:
+    - _config.yml
+    - /_layouts
+    - /_includes
+    media: "_uploads"
+    metadata:
+      _recipes:
+        - name: "layout"
+          field:
+            element: "hidden"
+            value: "recipe"
+        - name: "title"
+          field:
+            element: "text"
+            label: "title"
+            help: "Put the title of your recipe here"
+

@@ -26,26 +26,3 @@ $(".post-content img").each(function() {
     }
 });
 </script>
-
-
-{%- if site.data.settings.upzoom -%}
-<!-- add a link to the image itself -->
-<script>
-$(document).ready(function() {
-  $('.post-content img').each(function ()
-  {
-     var currentImage = $(this);
-     currentImage.wrap("<a href='" + currentImage.attr("src") + "' </a>");
-  });
-});
-</script>
-{%- endif -%}
-
-
-<!-- now follows the javascript to show that a post can be edited -->
-<script>
-  if (localStorage.getItem("netlify-cms-user") != '') {
-  var theuser = JSON.parse(localStorage.getItem("netlify-cms-user")).name;
-  $("#user").html("<a class='editlink' title='With permission through GitHub' href='/admin/#/collections/posts/entries{{ page.path | remove: ".md" | remove: "_posts" }}'>" + "edit this page" + "</a>");
-}
-</script>
