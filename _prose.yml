@@ -30,7 +30,7 @@ prose:
             label: "title"
             placeholder: "Put the title of your recipe here"
         - name: "excerpt_separator"
-            field:
+          field:
             element: "hidden"
             value: "<!--more-->"
 
