@@ -29,8 +29,4 @@ prose:
             element: "text"
             label: "title"
             placeholder: "Put the title of your recipe here"
-        - name: "excerpt_separator"
-          field:
-            element: "hidden"
-            value: "<!--more-->"
 
