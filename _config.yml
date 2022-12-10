@@ -32,7 +32,6 @@ permalink: pretty
 highlighter: rouge
 plugins: [jekyll-paginate, jekyll-seo-tag, jekyll-sitemap]
 exclude: [".jekyll-cache", "Gemfile", "README.md"]
-excerpt_separator: <!--more--> # Leave this because this controls the extract from the recipe on the listing page
 lang: en_gb
 
 # collections

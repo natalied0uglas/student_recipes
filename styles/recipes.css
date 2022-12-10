@@ -14,18 +14,6 @@
   box-sizing: inherit;
 }
 
-/***********************
- Each recipe needs the title in the metadata but also at the top of the page 
- so that it can be converted to a Word file for placing into InDesign later.
-
-The following CSS hides the title that you put at the top of your page 
-so that the title is not repeated. 
-*************************/
-
-.post-content h1, .excerpt h1 {
-  display:none;
-}
-
 /* the rest is up to you */
 
 

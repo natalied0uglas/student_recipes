@@ -4,12 +4,7 @@ title: Moussaka
 date: 2019-10-19
 published: true
 ---
-
-# Moussaka
-
 There are variations on this basic recipe, sometimes with no sauce, sometimes with other vegetables. The most common variant in Greece may include zucchini (courgette), part-fried potatoes or sautéed mushrooms in addition to the eggplant.
-
-<!--more-->
 
 ![moussaka.jpg]({{site.baseurl}}/uploads/moussaka.jpg)
 
@@ -17,7 +12,7 @@ There are variations on this basic recipe, sometimes with no sauce, sometimes wi
 
 - 1 kg aubergines (large or/and elongated variety)
 - 160 ml vegetable oil (about 1 teacup)
-- 1 large onion, finely sliced
+- ½ large onion, finely sliced
 - 450 grams minced beef
 - 1 glass white wine (not retsina, but aretsinoto)
 - 350 grams fresh tomatoes,
