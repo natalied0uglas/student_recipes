@@ -4,14 +4,12 @@
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  background: #fff;
-  box-sizing: border-box;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
+*  {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* the rest is up to you */

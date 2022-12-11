@@ -2,12 +2,15 @@
 # SITE CONFIGURATION
 url: "https://yoursite.github.io" #change this to yours
 title: Your recipe collection
-recipemenu: false # you can change to true and a menu of all recipes will appear
+recipemenu: true # you can change to true and a menu of all recipes will appear
 favicon: /uploads/favicon.ico
 recipe_bookcover: /uploads/bookcover.jpg
+# the cover image needs to be 1400px x 1900px portrait size because it will be used in the eBook
+# You can simply over write this one or save a new one and then put the link to it here
+
 # change the following to your name or site name
 footer_text:
-  "Copyright 2020 My name"
+  "Copyright 2022 My name"
 
 # DO NOT EDIT BELOW THIS LINE
 
@@ -23,10 +26,9 @@ str_next_post: "Next post"
 str_previous_post: "Previous post"
 str_next_page: "Next"
 str_previous_page: "Prev"
-str_javascript_required_disqus: "Please enable JavaScript to view comments."
 
 # BUILD SETTINGS
-baseurl: "" #leave this alone
+baseurl: "" #you can put your site URL in here once the site is up and running
 markdown: kramdown
 permalink: pretty
 highlighter: rouge

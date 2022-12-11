@@ -12,12 +12,13 @@
     {%- endif -%}
 
     {% include recipenavbar.html %}
-    <div class="content">
+    {% include recipemenu.html %}
+    <main>
       {{ content }}
       {%- if page.layout == "recipeshome" -%}
       <a title="see a list of all recipes" href="/recipelist">see a list of all recipes</a>
       {%- endif -%}
-    </div>
+    </main>
 
     {% include footer.html %}
   </body>
