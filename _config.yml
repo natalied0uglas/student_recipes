@@ -1,12 +1,11 @@
 
 # SITE CONFIGURATION
-url: "https://yoursite.github.io" #change this to yours
 title: Your recipe collection
-recipemenu: true # you can change to true and a menu of all recipes will appear
+recipemenu: false # you can change to true and a menu of all recipes will appear
 favicon: /uploads/favicon.ico
 recipe_bookcover: /uploads/bookcover.jpg
 # the cover image needs to be 1400px x 1900px portrait size because it will be used in the eBook
-# You can simply over write this one or save a new one and then put the link to it here
+# You can simply overwrite this one or save a new one and then put the link to it here
 
 # change the following to your name or site name
 footer_text:
