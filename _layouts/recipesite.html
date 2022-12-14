@@ -3,20 +3,21 @@
   {% include recipeshead.html %}
   <body class="{{page.layout}} {{page.title | replace: ' ', '_'}}">
 
-    {%- if page.layout == "recipeshome" -%}
+
+
+    {% include recipenavbar.html %}
+    {% include recipemenu.html %}
+    <main>
+      {%- if page.layout == "recipeshome" -%}
     {%- if site.recipe_bookcover -%}
       <a title="see a list of all recipes" href="/recipelist"><div id="main">
     <img class="cover" src="{{ site.recipe_bookcover | relative_url }}" alt="site.title">
       </div></a>
     {%- endif -%}
     {%- endif -%}
-
-    {% include recipenavbar.html %}
-    {% include recipemenu.html %}
-    <main>
       {{ content }}
       {%- if page.layout == "recipeshome" -%}
-      <a title="see a list of all recipes" href="/recipelist">see a list of all recipes</a>
+      <button><a title="see a list of all recipes" href="/recipelist">see a list of all recipes</a></button>
       {%- endif -%}
     </main>
 
