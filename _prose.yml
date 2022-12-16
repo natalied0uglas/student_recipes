@@ -29,4 +29,9 @@ prose:
             element: "text"
             label: "title"
             placeholder: "Put the title of your recipe here"
+        - name: "order"
+          field:
+            element: "number"
+            label: "Order in the Recipe listing (1-5) - 5 would be last"
+            placeholder: "1"
 
