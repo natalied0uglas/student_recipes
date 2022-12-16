@@ -1,0 +1,76 @@
+backend:
+  name: github
+  repo: githubusername/yourrepositoryname # Path to your GitHub repository
+  branch: master # Branch to update (master by default)
+  site_domain: yoursite.netlify.app #Your site on netlify
+  use_graphql: true
+
+publish_mode: editorial_workflow
+show_preview_links: true
+display_url: https://yoursite.netlify.app
+logo_url: https://yoursite.netlify.app/uploads/logo.jpg
+
+# Do NOT edit below this line unless you want to change the home page
+
+media_folder: "uploads" # Media files will be stored in the repo under /uploads
+public_folder: "../uploads"
+
+collections:
+  - name: "home"
+    label: "Home Page" # Used in the UI
+    label_singular: "Home Page"
+    description: "Just edit this page"
+    folder: "/" # The path to the folder where the documents are stored
+    create: false # Allow users to create new documents in this collection
+    delete: false
+    file: "index.md"
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    media_folder: "/uploads"
+    public_folder: "../uploads"
+    editor:
+      preview: false
+    fields: # The fields for each document, usually in front matter
+      - { label: "Title of your recipe site", name: "title", widget: "string" }
+      - {
+          label: "Subtitle",
+          name: "subtitle",
+          widget: "string",
+          required: false,
+          hint: "This will show under the heading for the page.",
+        }
+      - { label: "Permalink", name: "permalink", widget: "hidden", default: "/" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Body", name: "body", widget: "markdown" }
+      - label: "Layout"
+        name: "layout"
+        widget: "hidden"
+        default: "recipeshome"
+
+  - name: "recipes"
+    label: "Your recipes" # Used in the UI
+    label_singular: "Recipe"
+    description: "This is where you add your recipes."
+    folder: "_recipes/" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    delete: true
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    media_folder: "/uploads"
+    public_folder: "../uploads"
+    editor:
+      preview: false
+    fields: # The fields for each document, usually in front matter
+      - label: "Title"
+        name: "title"
+        widget: "string"
+      - label: "Publish Date"
+        name: "date"
+        widget: "datetime"
+      - label: "Body"
+        name: "body"
+        widget: "markdown"
+      - label: "Layout"
+        name: "layout"
+        widget: "hidden",
+        default: "recipe"
+
+
