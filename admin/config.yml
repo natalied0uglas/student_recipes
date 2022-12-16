@@ -65,12 +65,15 @@ collections:
       - label: "Publish Date"
         name: "date"
         widget: "datetime"
+      - label: "Order in the Recipe listing (1-5) - 5 would be last"
+        name: "order"
+        element: "number"
       - label: "Body"
         name: "body"
         widget: "markdown"
       - label: "Layout"
         name: "layout"
-        widget: "hidden",
+        widget: "hidden"
         default: "recipe"
 
 
