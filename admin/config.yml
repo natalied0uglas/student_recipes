@@ -8,7 +8,7 @@ backend:
 publish_mode: editorial_workflow
 show_preview_links: true
 display_url: https://yoursite.netlify.app
-logo_url: https://yoursite.netlify.app/uploads/logo.jpg
+logo_url: https://yoursite.netlify.app/uploads/editor.jpg
 
 # Do NOT edit below this line unless you want to change the home page
 
@@ -23,7 +23,7 @@ collections:
     folder: "/" # The path to the folder where the documents are stored
     create: false # Allow users to create new documents in this collection
     delete: false
-    file: "index.md"
+    file: "/index.md"
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     media_folder: "/uploads"
     public_folder: "../uploads"
