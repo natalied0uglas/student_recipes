@@ -5,7 +5,7 @@ layout: recipesite
 <div class="home">
 
   <section class="post-content">
-	{{ content }}
+    {{ content | replace: "../uploads", "/uploads" }}
   </section>
 
   {%- include recipelist.html -%}

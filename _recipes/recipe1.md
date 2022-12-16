@@ -7,7 +7,7 @@ order: 2
 ---
 There are variations on this basic recipe, sometimes with no sauce, sometimes with other vegetables. The most common variant in Greece may include zucchini (courgette), part-fried potatoes or sautéed mushrooms in addition to the eggplant.
 
-![moussaka.jpg]({{site.baseurl}}/uploads/moussaka.jpg)
+![moussaka.jpg](../uploads/moussaka.jpg)
 
 ## Ingredients
 

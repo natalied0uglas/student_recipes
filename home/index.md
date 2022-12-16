@@ -1,13 +1,12 @@
 ---
 layout: recipeshome
-title: Recipes
-subtitle: My Recipe Site #optional sub title to the post
+title: Here is the name of your recipe site
 permalink: "/"
 tags:
 published: true
 ---
 
-Here is an introduction to my recipe site hello hello
+Here is an introduction to my recipe site
 
 You should use **markdown** to write this text and this will automatically be converted to `HTML`.
 

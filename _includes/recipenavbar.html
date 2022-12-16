@@ -1,16 +1,16 @@
 
 <header class="site-header">
 
-    <!-- Logo and title -->
+    {% assign home_page = site.pages | where: 'name', 'index.md' %}    
 	<div class="branding">
 		<h1 class="site-title">
 			{%- if page.layout == "recipe" -%}
 			<a title="back to the recipe list" aria-label="{{ site.title }}" href="{{ '/recipelist' | relative_url }}">
-				{{ site.title }}
+				{{ home_page[0].title }}
 			</a>
 			{%- else -%}
 			<a title='HOME' aria-label="{{ site.title }}" href="{{ '/' | relative_url }}">
-        {{ site.title }}
+        {{ home_page[0].title }}
       </a>
 			{%- endif -%}
 		</h1>
@@ -18,3 +18,4 @@
 
 	
 </header>
+

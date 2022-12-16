@@ -2,5 +2,5 @@
 layout: recipesite
 ---
   <section class="post-content">
-	{{ content }}
+    {{ content | replace: "../uploads", "/uploads" }}
   </section>
