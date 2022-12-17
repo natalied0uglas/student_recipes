@@ -1,21 +1,25 @@
 
 <header class="site-header">
 
-    {% assign home_page = site.pages | where: 'name', 'index.md' %}    
+	{% assign home_page = site.pages | where: 'name', 'index.md' %}    
 	<div class="branding">
 		<h1 class="site-title">
-			{%- if page.layout == "recipe" -%}
-			<a title="back to the recipe list" aria-label="{{ site.title }}" href="{{ '/recipelist' | relative_url }}">
-				{{ home_page[0].title }}
+		{%- if page.layout == "recipe" -%}
+		<a title="back to the recipe list" aria-label="{{ home_page[0].title }}" href="{{ '/recipelist' | relative_url }}">
+			{{ home_page[0].title }}
+		</a>
+		{%- endif -%}
+		{%- if page.layout == "recipeshome" -%}	
+		{{ home_page[0].title }}	
+		{%- endif -%}
+		{%- if page.layout == "recipelist" -%}	
+		<a title='HOME' aria-label="{{ home_page[0].title }}" href="{{ '/' | relative_url }}">
+			{{ home_page[0].title }}
 			</a>
-			{%- else -%}
-			<a title='HOME' aria-label="{{ site.title }}" href="{{ '/' | relative_url }}">
-        {{ home_page[0].title }}
-      </a>
-			{%- endif -%}
+		{%- endif -%}
+		
 		</h1>
 	</div>
-
-	
-</header>
+		
+	</header>
 
