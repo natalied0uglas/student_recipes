@@ -2,7 +2,7 @@
 layout: recipeshome
 title: Here is the name of your recipe site
 permalink: "/"
-tags:
+coverimage: ../uploads/bookcover.jpg
 published: true
 ---
 

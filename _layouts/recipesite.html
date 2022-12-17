@@ -2,20 +2,17 @@
 <html lang="en">
   {% include recipeshead.html %}
   <body class="{{page.layout}} {{page.title | replace: ' ', '_'}}">
-
-
-
     {% include recipenavbar.html %}
     {% include recipemenu.html %}
     <main>
       {%- if page.layout == "recipeshome" -%}
-    {%- if site.recipe_bookcover -%}
-      <a title="see a list of all recipes" href="/recipelist"><div id="main">
-    <img class="cover" src="{{ site.recipe_bookcover | relative_url }}" alt="site.title">
-      </div></a>
+    {%- if page.coverimage -%}
+      <a title="see a list of all recipes" href="/recipelist">
+    <img class="cover" src="{{ page.coverimage | relative_url }}" alt="{{ home_page[0].title }}" />
+      </a>
     {%- endif -%}
     {%- endif -%}
-      {{ content }}
+      {{ content | replace: "../uploads", "/uploads" }}
       {%- if page.layout == "recipeshome" -%}
       <button><a title="see a list of all recipes" href="/recipelist">see a list of all recipes</a></button>
       {%- endif -%}

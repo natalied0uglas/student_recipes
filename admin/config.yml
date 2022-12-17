@@ -20,10 +20,9 @@ collections:
     label: "Home Page" # Used in the UI
     label_singular: "Home Page"
     description: "Just edit this page"
-    folder: "/" # The path to the folder where the documents are stored
+    folder: "home" # The path to the folder where the documents are stored
     create: false # Allow users to create new documents in this collection
     delete: false
-    file: "/index.md"
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     media_folder: "/uploads"
     public_folder: "../uploads"
@@ -32,11 +31,11 @@ collections:
     fields: # The fields for each document, usually in front matter
       - { label: "Title of your recipe site", name: "title", widget: "string" }
       - {
-          label: "Subtitle",
-          name: "subtitle",
-          widget: "string",
+          label: "Cover Image",
+          name: "coverimage",
+          widget: "image",
           required: false,
-          hint: "This will show under the heading for the page.",
+          hint: "This cover image will appear at the top of your introduction on the home page.",
         }
       - { label: "Permalink", name: "permalink", widget: "hidden", default: "/" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
