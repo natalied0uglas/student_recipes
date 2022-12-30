@@ -7,9 +7,11 @@
     <main>
       {%- if page.layout == "recipeshome" -%}
     {%- if page.coverimage -%}
-      <a title="see a list of all recipes" href="/recipelist">
-    <img class="cover" src="{{ page.coverimage | relative_url }}" alt="{{ home_page[0].title }}" />
-      </a>
+      <div class="hero">
+        <a title="see a list of all recipes" href="/recipelist">
+        <img class="cover" src="{{ page.coverimage | relative_url }}" alt="{{ home_page[0].title }}" />
+        </a>
+      </div>
     {%- endif -%}
     {%- endif -%}
       {{ content | replace: "../uploads", "/uploads" }}
