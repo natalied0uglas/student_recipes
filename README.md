@@ -14,27 +14,18 @@ Open `_config.yml` in a text editor to change some settings.
 
 
 ### Site configuration
-Configure as your own website in `_config.yml`:
-
-```YAML
-  url: "https://username.github.io"
-```
 
 Change these variables in `_config.yml`:
 
 ```yml
-title: Your recipe collection # the all important name of your recipe collection
-recipemenu: false # change to true and a menu of all recipes will appear on each recipe page
-favicon: uploads/favicon.ico # you can upload your own icon
-recipe_bookcover: /uploads/bookcover.jpg #this is a placeholder that you can replace with your own cover image
-# change the following to your name or site name for the footer text
-footer_text:
-  "Copyright 2020 My name"
+url: "https://yoursite.netlify.app"   #change this to yours
+repository: yourusername/yourrepository
+title: Your recipe collection
+recipemenu: false # you can change to true and a menu of all recipes will appear
+favicon: /uploads/favicon.ico
 ```
 
 ## Usage
-
-This is a template set up for anyone to begin their own web site. The template is created by Chris Jennings and is based on various Jekyll themes.
 
 `Jekyll` is a system for building and editing static web sites; meaning that it does not need a database for the content. Content can be added with a simple text language called `Markdown`. You can explore and learn **Markdown** here:
 
@@ -47,7 +38,7 @@ Although the main content is built with markdown and converted to HTML automatic
 ### In Github
 
 - Create an account on [GitHub][6a43c620]
-- After creating an account on GitHub, you first need to create new repository by cloning this template: https://github.com/publisha/blogbldr
+- After creating an account on GitHub, you first need to create new repository by cloning this template: https://github.com/Pageboy/student_recipes
 - You will now have a name for the repository and your GitHub username.
 - Keep the GitHub window open in your browser (because we will need to come back to this in a short while)
 
@@ -59,8 +50,8 @@ Although the main content is built with markdown and converted to HTML automatic
 - **Login** with your GitHub credentials
 - create a `New Site with Git`
 - put in the name of the GitHub repository that you created above.
-- Your GitHub repository will be built as a web site with a randomly chosen URL. Something like `wiggly_eel_9875.netlify.app`.
-- Now change the first part of this URL to something that you want. In other words, the wiggly_eel_9875 part can change to something that has not been taken (eg: *mylifeintext.netlify.app*)
+- Your GitHub repository will be built as a web site with a randomly chosen URL. Something like `juicy_peach_9965.netlify.app`.
+- Now change the first part of this URL to something that you want. In other words, the juicy_peach_9965 part can change to something that has not been taken (eg: *mytastyrecipes.netlify.app*)
 - Keep the Netlify window open and do not sign out
 
 ### GitHub is where the files are located and updated.
@@ -102,7 +93,6 @@ backend:
 publish_mode: editorial_workflow
 show_preview_links: true
 display_url: https://yoursite.netlify.app
-logo_url: https://yoursite.netlify.app/uploads/logo.jpg
 ```
 
 Wherever you see `yoursite` change to the name of your site created on Netlify.
@@ -119,11 +109,11 @@ url: "https://yoursite.netlify.app"
 repository: yourusername/yourrepository
 ```
 
-### Using the CMS to add more Settings
+### Using the CMS to edit your site
 
 Once these changes have been made in Github, you can now go to your new site and begin to add some further details through the CMS. You may need to wait for 5 minutes.
 
-At the top right in the navigation bar of your site you should see a pencil icon. Click this and after authenticating (just for one time) you should then see the editor user interface. You need to select the item labelled _Settings_ under the **Collections** heading on the left. The important settings are found under the _General Critical Settings for your web site_ heading. Go ahead and dig into here, because this is where you name your site and put in the banner image and logo. You will come back this, but right now you need to understand how the changes are saves and published.
+Your site will be live but there will be no styling; your task is to edit the CSS, and add your recipes and introduction text.
 
 ## Saving and Publishing
 
