@@ -115,14 +115,7 @@ Once these changes have been made in Github, you can now go to your new site and
 
 Your site will be live but there will be no styling; your task is to edit the CSS, and add your recipes and introduction text.
 
-## Saving and Publishing
+## Publishing and editing Content
 
 When adding or editing any content through the CMS you will see the `Save` button in the control bar at the top of the editor page. This will save the new entry or setting but it will not be published to the web site yet. To confirm the change, you need to `Set Status` to `Ready` and then use the `Publish` button. For the Settings, this isn't very useful, but when you are posting a new article to your blog, you can save and then come back later to finish the article before finalising. You will notice a `View Preview` link; this gives you the ability to see the post before it goes live to your site.
 
-### Workflow
-
-When changes have been made you will see a `Workflow` item in the top bar. From here you can see items that are _Draft_, _In Review_ or _Ready_. The interface allows for you to **drag** the items across to make those changes.
-
-## The Settings
-
-The settings available are self explanatory, so it would be wise to try these things and see what changes are made. Be aware that it does take up to 10 minutes for changes to work their way through to the live site.

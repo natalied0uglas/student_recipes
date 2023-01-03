@@ -1,11 +1,7 @@
 {%- if site.footer_text -%}
 <footer>
-    <p>{{ site.footer_text }}</p>
-            <div class="footer-icons">
-                <ul>
-                <!-- Social icons from Font Awesome, if enabled -->
-                {%- include icons.html -%}
-                </ul>
-            </div>
+    <p>{{ site.footer_text }} {%- if site.editbutton -%} <button class="edit"><a aria-label="Editor" title="Editor" href="/admin/" target="_blank">
+        Edit
+      </a></button>{%- endif -%}</p>
 </footer>
 {%- endif -%}
