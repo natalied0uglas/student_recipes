@@ -66,7 +66,7 @@ collections:
         widget: "datetime"
       - label: "Order in the Recipe listing (1-5) - 5 would be last"
         name: "order"
-        element: "number"
+        widget: "number"
       - label: "Body"
         name: "body"
         widget: "markdown"
