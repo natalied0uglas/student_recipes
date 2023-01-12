@@ -7,9 +7,8 @@ order: 2
 ---
 Aute velit minim ad ut deserunt ipsum eiusmod. Laborum nisi ex qui exercitation elit dolor consectetur. Ullamco ex eiusmod ad dolor nisi adipisicing est esse. Veniam nostrud do laboris id est nulla qui nulla. Lorem velit nulla in tempor nisi laboris. Dolor culpa mollit elit anim minim Lorem.
 
-![toast and blueberries](../uploads/joseph-gonzalez-zcUgjyqEwe8-unsplash.jpg)
+![Delicious Plate of Toast, Blueberries and Bananas, covered in sticky maple syrup](../uploads/joseph-gonzalez-zcUgjyqEwe8-unsplash.jpg "Photo by Joseph Smart")
 
-Photo by Joseph Gonzalez
 
 ## Ingredients
 

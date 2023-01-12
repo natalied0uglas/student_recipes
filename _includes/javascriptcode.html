@@ -15,14 +15,28 @@
         $("a[href$='.jpg'],a[href$='.jpeg'],a[href$='.png'],a[href$='.gif']").attr('rel', 'gallery').attr('class', 'postimage').fancybox();
     </script>
 
-		<!-- here follows a script to put the alt tag to a caption under the images -->
+		<!-- here follows a script to put the title tag to a caption under the images -->
 
 <script>
 $(".post-content img").each(function() {
-    var imageCaption = $(this).attr("alt");
+    if ($(this).attr("title")) {
+    var imageCaption = $(this).attr("title");
     if (imageCaption != '') {
         $("<span class='caption'>" + imageCaption +
             "</span>").insertAfter(this);
     }
+}
 });
 </script>
+
+
+<!-- add a link to the image itself -->
+<script>
+    $(document).ready(function() {
+      $('.post-content img').each(function ()
+      {
+         var currentImage = $(this);
+         currentImage.wrap("<a href='" + currentImage.attr("src") + "' </a>");
+      });
+    });
+    </script>
