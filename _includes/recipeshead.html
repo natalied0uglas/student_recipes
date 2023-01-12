@@ -5,9 +5,8 @@
 
     <!--basic stylesheet-->
     <link rel="stylesheet" href="{{site.baseurl}}/styles/recipes.css">
-    <!--Favicon-->
-    <link rel="shortcut icon" href="{{ site.favicon | relative_url }}" type="image/x-icon">
-
+    
+    {% include favicons.html %}
     <!-- Canonical -->
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
 
