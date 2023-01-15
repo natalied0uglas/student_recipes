@@ -2,6 +2,10 @@
 <footer>
     <p>{{ site.footer_text }} {%- if site.editbutton -%} <button class="edit"><a aria-label="Editor" title="Editor" href="/admin/" target="_blank">
         Edit
-      </a></button>{%- endif -%}</p>
+      </a></button>{%- endif -%}
+      {%- if site.searchbutton -%} <button class="search"><a aria-label="Search" title="Search" href="/search/" target="_blank">
+        Search
+      </a></button>{%- endif -%}
+    </p>
 </footer>
 {%- endif -%}

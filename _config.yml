@@ -6,7 +6,9 @@ title: Your recipe collection
 recipemenu: false # you can change to true and a menu of all recipes will appear
 editbutton: false # you can navigate to edit your site by going to https://yoursite.netlify.app/admin
 # change the above to true and an admin button will appear in your footer
-favicon: /uploads/favicon.ico
+searchbutton: false # you can have a search feature by adding this button to the footer
+# change the above to true and a search button will appear in your footer
+
 
 # change the following to your name or site name
 footer_text:
