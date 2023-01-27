@@ -22,7 +22,10 @@ url: "https://yoursite.netlify.app"   #change this to yours
 repository: yourusername/yourrepository
 title: Your recipe collection
 recipemenu: false # you can change to true and a menu of all recipes will appear
-favicon: /uploads/favicon.ico
+editbutton: false # you can navigate to edit your site by going to https://yoursite.netlify.app/admin
+# change the above to true and an admin button will appear in your footer
+searchbutton: false # you can have a search feature by adding this button to the footer
+# change the above to true and a search button will appear in your footer
 ```
 
 ## Usage
